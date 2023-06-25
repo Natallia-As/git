@@ -55,15 +55,17 @@ $ git checkout main
 $ git push -u origin check-lists
 
 9. На внешнем репозитории сделать Pull Request ветки CheckLists в main:
-Перейдем на сайт GitHub и выполним следующие шаги:
+На сайт GitHub и выполним следующие шаги:
 
-перейти в удаленный репозиторий GIT_branching
-в ветках выбрать Checklists вместо main
-нажмите, Compare & pull requestчтобы открыть запрос на включение
-в первом поле ввода напишите свое сообщение коммита («add check-list.txt»)
+перейти в удаленный репозиторий git
+в ветках выбрать Checklists 
+нажfnm Compare & pull request чтобы открыть запрос на включение
+в первом поле ввода написать сообщение коммита («add check-list.txt»)
 добавить комментарий (необязательно)
-нажмите на Create pull request
-после перехода на следующую страницу слияния нажмите Merge pull request и Confirm merge
-Теперь мы можем проверить основную ветку и увидеть там и BR_attributes.txt , и Checklist_attributes.txt .
+нажать на Create pull request
+после перехода на следующую страницу слияния нажать Merge pull request и Confirm merge
+Теперь мы можем проверить основную ветку и увидеть там и structural_br.txt и check-list.txt.
 
-10. Синхронизировать Внешнюю и Локальную ветки Main
+10. Синхронизировать Внешнюю и Локальную ветки Main:
+$ git checkout main   
+$ git pull
