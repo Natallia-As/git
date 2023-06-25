@@ -1,0 +1,73 @@
+GitHub. HW_2
+
+1. На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- Bag Reports
+- SQL
+- Charles
+- Mobile testing:
+
+check-lists
+mkdir "Postman" "Jmeter" "CheckLists" "Bag Reports" "SQL" "Charles" "Mobile testing"
+
+В GitBush ➡️ git init 
+
+В GitHub ➡️ New repository ➡️ Create repository
+
+
+ed25519
+
+
+2. Запушить все ветки на внешний репозиторий
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+4. Запушить структуру багрепорта на внешний репозиторий
+5. Вмержить ветку Bag Reports в Main
+=======
+Во внешнем репозитарии создадим ветку git - там будут ответы на 2 часть домашнего задания по GitHub
+Из ветки в GitHub копируем код SSH этой ветки (git@github.com:Natallia-As/git.git)
+
+На локальном репозитарии:
+$ cd test
+$ git clone git@github.com:Natallia-As/git.git
+$ cd git
+$ git branch postman
+$ git branch jmeter
+$ git branch check-lists
+$ git branch bug-reports
+$ git branch sql
+$ git branch charles
+$ git branch mobile-testing
+
+2. Запушить все ветки на внешний репозиторий:
+находясь в главной ветке main выполнить
+$ git push -
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта:
+$ git checkout bug-repo
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта:
+vim structural_br.txt
+
+HEAD
+4. Запушить структуру багрепорта на внешний репозиторий:
+$ git add .
+$ git commit -m "structural_br.txt added to bug-reports"
+$ git checkout main
+$ git push -u origin bug-reports
+
+5. Вмержить ветку Bag Reports в Main:
+$ git merge bug-reports
+
+=======
+
+4. Запушить структуру багрепорта на внешний репозиторий
+5. Вмержить ветку Bag Reports в Main
+bug-reports
+main
+6. Запушить main на внешний репозиторий.
+7. В ветке CheckLists набросать структуру чек листа.
+8. Запушить структуру на внешний репозиторий
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+10. Синхронизировать Внешнюю и Локальную ветки Main
