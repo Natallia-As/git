@@ -48,6 +48,46 @@ git push
 git checkout check-lists
 vim check-list.txt
 
+8. Запушить структуру на внешний репозиторий
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+
+
+На локальном репозитарии:
+$ cd test
+$ git clone git@github.com:Natallia-As/git.git
+$ cd git
+$ git branch postman
+$ git branch jmeter
+$ git branch check-lists
+$ git branch bug-reports
+$ git branch sql
+$ git branch charles
+$ git branch mobile-testing
+
+2. Запушить все ветки на внешний репозиторий:
+находясь в главной ветке main выполнить
+$ git push --all
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта:
+vim structural_br.txt
+
+4. Запушить структуру багрепорта на внешний репозиторий:
+$ git add .
+$ git commit -m "structural_br.txt added to bug-reports"
+$ git checkout main
+$ git push -u origin bug-reports
+
+5. Вмержить ветку Bag Reports в Main:
+git checkout main
+$ git merge bug-reports
+
+6. Запушить main на внешний репозиторий:
+git push
+
+7. В ветке CheckLists набросать структуру чек листа:
+git checkout check-lists
+vim check-list.txt
+
 8. Запушить структуру на внешний репозиторий:
 $ git add .
 $ git commit -m "check-list.txt"

@@ -9,6 +9,22 @@ GitHub. HW_2
 - Charles
 - Mobile testing:
 
+check-lists
+mkdir "Postman" "Jmeter" "CheckLists" "Bag Reports" "SQL" "Charles" "Mobile testing"
+
+В GitBush ➡️ git init 
+
+В GitHub ➡️ New repository ➡️ Create repository
+
+
+ed25519
+
+
+2. Запушить все ветки на внешний репозиторий
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+4. Запушить структуру багрепорта на внешний репозиторий
+5. Вмержить ветку Bag Reports в Main
+=======
 Во внешнем репозитарии создадим ветку git - там будут ответы на 2 часть домашнего задания по GitHub
 Из ветки в GitHub копируем код SSH этой ветки (git@github.com:Natallia-As/git.git)
 
@@ -26,18 +42,15 @@ $ git branch mobile-testing
 
 2. Запушить все ветки на внешний репозиторий:
 находясь в главной ветке main выполнить
-$ git push --all
-<<<<<<< HEAD
-=======
+$ git push -
 
 3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта:
-$ git checkout bug-reports
->>>>>>> bug-reports
+$ git checkout bug-repo
 
 3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта:
 vim structural_br.txt
 
-<<<<<<< HEAD
+HEAD
 4. Запушить структуру багрепорта на внешний репозиторий:
 $ git add .
 $ git commit -m "structural_br.txt added to bug-reports"
@@ -51,7 +64,8 @@ $ git merge bug-reports
 
 4. Запушить структуру багрепорта на внешний репозиторий
 5. Вмержить ветку Bag Reports в Main
->>>>>>> bug-reports
+bug-reports
+main
 6. Запушить main на внешний репозиторий.
 7. В ветке CheckLists набросать структуру чек листа.
 8. Запушить структуру на внешний репозиторий
