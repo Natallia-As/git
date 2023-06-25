@@ -27,10 +27,17 @@ $ git branch mobile-testing
 2. Запушить все ветки на внешний репозиторий:
 находясь в главной ветке main выполнить
 $ git push --all
+<<<<<<< HEAD
+=======
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта:
+$ git checkout bug-reports
+>>>>>>> bug-reports
 
 3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта:
 vim structural_br.txt
 
+<<<<<<< HEAD
 4. Запушить структуру багрепорта на внешний репозиторий:
 $ git add .
 $ git commit -m "structural_br.txt added to bug-reports"
@@ -40,7 +47,11 @@ $ git push -u origin bug-reports
 5. Вмержить ветку Bag Reports в Main:
 $ git merge bug-reports
 
+=======
 
+4. Запушить структуру багрепорта на внешний репозиторий
+5. Вмержить ветку Bag Reports в Main
+>>>>>>> bug-reports
 6. Запушить main на внешний репозиторий.
 7. В ветке CheckLists набросать структуру чек листа.
 8. Запушить структуру на внешний репозиторий
