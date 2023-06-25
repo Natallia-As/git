@@ -40,6 +40,7 @@ $ git push -u origin bug-reports
 5. Вмержить ветку Bag Reports в Main:
 $ git merge bug-reports
 
+
 6. Запушить main на внешний репозиторий.
 7. В ветке CheckLists набросать структуру чек листа.
 8. Запушить структуру на внешний репозиторий
