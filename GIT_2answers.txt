@@ -38,10 +38,32 @@ $ git checkout main
 $ git push -u origin bug-reports
 
 5. Вмержить ветку Bag Reports в Main:
+git checkout main
 $ git merge bug-reports
 
-6. Запушить main на внешний репозиторий.
-7. В ветке CheckLists набросать структуру чек листа.
-8. Запушить структуру на внешний репозиторий
-9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+6. Запушить main на внешний репозиторий:
+git push
+
+7. В ветке CheckLists набросать структуру чек листа:
+git checkout check-lists
+vim check-list.txt
+
+8. Запушить структуру на внешний репозиторий:
+$ git add .
+$ git commit -m "check-list.txt"
+$ git checkout main
+$ git push -u origin check-lists
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main:
+Перейдем на сайт GitHub и выполним следующие шаги:
+
+перейти в удаленный репозиторий GIT_branching
+в ветках выбрать Checklists вместо main
+нажмите, Compare & pull requestчтобы открыть запрос на включение
+в первом поле ввода напишите свое сообщение коммита («add check-list.txt»)
+добавить комментарий (необязательно)
+нажмите на Create pull request
+после перехода на следующую страницу слияния нажмите Merge pull request и Confirm merge
+Теперь мы можем проверить основную ветку и увидеть там и BR_attributes.txt , и Checklist_attributes.txt .
+
 10. Синхронизировать Внешнюю и Локальную ветки Main
