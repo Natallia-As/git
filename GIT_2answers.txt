@@ -9,18 +9,30 @@ GitHub. HW_2
 - Charles
 - Mobile testing:
 
-mkdir "Postman" "Jmeter" "CheckLists" "Bag Reports" "SQL" "Charles" "Mobile testing"
+Во внешнем репозитарии создадим ветку git - там будут ответы на 2 часть домашнего задания по GitHub
+Из ветки в GitHub копируем код SSH этой ветки (git@github.com:Natallia-As/git.git)
 
-В GitBush ➡️ git init 
+На локальном репозитарии:
+$ cd test
+$ git clone git@github.com:Natallia-As/git.git
+$ cd git
+$ git branch postman
+$ git branch jmeter
+$ git branch check-lists
+$ git branch bug-reports
+$ git branch sql
+$ git branch charles
+$ git branch mobile-testing
 
-В GitHub ➡️ New repository ➡️ Create repository
+2. Запушить все ветки на внешний репозиторий:
+находясь в главной ветке main выполнить
+$ git push --all
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта:
+$ git checkout bug-reports
 
 
-ed25519
 
-
-2. Запушить все ветки на внешний репозиторий
-3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
 4. Запушить структуру багрепорта на внешний репозиторий
 5. Вмержить ветку Bag Reports в Main
 6. Запушить main на внешний репозиторий.
