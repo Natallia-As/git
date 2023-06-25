@@ -1,4 +1,4 @@
-Checklist attributes:
+Bug report attributes:
 
 1. ID 
 уникальный идентификатор найденного бага.
